@@ -1,0 +1,36 @@
+.todo-task {
+  $root: &;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 0 auto 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+  transition: background-color .15s ease-in-out;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__complete-icon {
+    margin-right: 12px;
+    font-size: 24px;
+  }
+
+  &__date {
+    font-size: 12px;
+    margin-top: 2px;
+  }
+
+  &--done {
+    background-color: #d1d1d1;
+
+    #{$root}__title {
+      text-decoration: line-through;
+    }
+  }
+}

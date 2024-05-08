@@ -1,0 +1,19 @@
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html, #app, .app {
+  height: 100%;
+}
+
+body {
+  background-color: #81cdc6;
+  font-family: "Shantell Sans", cursive;
+  font-weight: 400;
+  height: 100%;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
